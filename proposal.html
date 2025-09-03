@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RAWAT JI</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="paper heart"></div>
+
+  <div class="paper image" id="image2">
+    <p> and I have fallen in</p>
+    <p>Love with You 😍 </p>
+    <img src="images/1.jpg" />
+  </div>
+
+  <div class="paper image">
+    <img src="images/2.jpg" />
+  </div>
+
+  <div class="paper image">
+    <p>How can someone be </p>
+    <p>so cute 🤌❤️ </p>
+    <img src="images/3.jpg" />
+  </div>
+
+  <div class="paper red">
+    <p class="p1"> and My Favorite</p>
+    <p class="p2">Person 😍</p>
+  </div>
+
+  <div class="paper">
+    <p class="p1">You are Cute </p>
+    <p class="p1">RAWAT ji <span style="color: red !important;">❤️</span></p>
+  </div>
+
+  <div class="paper">
+    <p class="p1">Drag the papers to move!</p>
+  </div>
+
+  <!-- Dynamically Load JS Based on Device Type -->
+  <script>
+    function loadScript(src) {
+      let script = document.createElement("script");
+      script.src = src;
+      script.async = true;
+      document.body.appendChild(script);
+    }
+
+    if (window.innerWidth >= 1024) {
+      loadScript("script.js"); // Load PC script
+    } else {
+      loadScript("mobile.js"); // Load mobile script
+    }
+  </script>
+
+</body>
+</html>
